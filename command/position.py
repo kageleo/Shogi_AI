@@ -23,6 +23,8 @@ def position(sfen):
         startposition = sfen[1]
         trun = sfen[2]
         moves = sfen[6:]
+        Bpieces = []
+        Wpieces = []
         pieces = sfen[3]
         p = ""
         for piece in pieces:
