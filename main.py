@@ -1,4 +1,4 @@
-from command import usi, setoption, position
+from command import usi, setoption, position, go
 
 while True:
     cmd = input().split()
@@ -24,9 +24,8 @@ while True:
         position.position(cmd[1:])
 
     # 思考開始の合図
-    elif cmd[0] == "go":
-        # 即時投了
-        print("bestmove resign")
+    elif cmd[0] == "go":    
+        go.go(cmd[1:])
 
     # 思考エンジンの予想手が外れた場合にGUIから送られるコマンド。
     elif cmd[0] == "stop":
