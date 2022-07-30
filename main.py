@@ -1,9 +1,9 @@
-from command import usi
+from command import usi, setoption
 
 while True:
     cmd = input().split()
 
-    # 思考エンジンの起動時、最初に送るコマンド（id:必須、option:任意）。最後に usiok を返す。
+    # 思考エンジンの起動時、GUIから最初に受け取るコマンド（id:必須、option:任意）。エンジンの初期設定を行う。最後に usiok を返す。
     if cmd[0] == "usi":
         usi.usi()
 
@@ -11,9 +11,9 @@ while True:
     elif cmd[0] == "isready":
         print("readyok")
 
-    # 思考エンジンに対して設定をする時に送る。
+    # GUIから思考エンジンの設定を受け取る。
     elif cmd[0] == "setoption":
-        pass
+        setoption.setoption(cmd[2],cmd[4:])
 
     # 対局開始時に送る。
     elif cmd[0] == "usinewgame":
