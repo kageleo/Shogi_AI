@@ -8,8 +8,8 @@ def usi():
         print(f'id name {jsn["id"]["ENGINE_NAME"]}')
         print(f'id author {jsn["id"]["ENGINE_AUTHOR"]}')
 
-        for key in jsn["option"]:
-            print(f'option name {key} type {jsn["option"][key]["type"]} default {jsn["option"][key]["value"]}')
+        for name, option in jsn["option"].items():
+            print(f'option name {name} type {option["type"]} default {option["value"]}')
 
         print("usiok")
 
