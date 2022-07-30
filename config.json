@@ -1,4 +1,11 @@
 {
-    "ENGINE_NAME" : "Shogi_AI",
-    "ENGINE_AUTHOR" : "kageleo"
+    "id" : {
+        "ENGINE_NAME" : "Shogi_AI",
+        "ENGINE_AUTHOR" : "kageleo"
+    },
+    "option" : {
+        "optionKey1" : "optionVal1",
+        "optionKey2" : "optionVal2",
+        "optionKey3" : "optionVal3"
+    }
 }

@@ -1,17 +1,11 @@
-import json
-
-with open("./config.json", "r") as f:
-    jsn = json.load(f)
-
+from command import usi
 
 while True:
     cmd = input().split()
 
     # 思考エンジンの起動時、最初に送るコマンド（id:必須、option:任意）。最後に usiok を返す。
     if cmd[0] == "usi":
-        print(f'id name {jsn["ENGINE_NAME"]}')
-        print(f'id author {jsn["ENGINE_AUTHOR"]}')
-        print("usiok")
+        usi.usi()
 
     # 対局開始前に送る。対局準備完了後 readyok を返す。
     elif cmd[0] == "isready":
