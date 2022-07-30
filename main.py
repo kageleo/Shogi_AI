@@ -1,4 +1,4 @@
-from command import usi, setoption
+from command import usi, setoption, position
 
 while True:
     cmd = input().split()
@@ -19,20 +19,20 @@ while True:
     elif cmd[0] == "usinewgame":
         pass
 
-    # 思考開始局面をエンジンに知らせるためのコマンド
+    # 思考開始局面をGUIから受け取る。
     elif cmd[0] == "position":
-        pass
+        position.position(cmd[1:])
 
     # 思考開始の合図
     elif cmd[0] == "go":
         # 即時投了
         print("bestmove resign")
 
-    # エンジンに対し思考停止を命令するコマンド
+    # 思考エンジンの予想手が外れた場合にGUIから送られるコマンド。
     elif cmd[0] == "stop":
         pass
 
-    # 思考エンジンが先読み中、前回のbestmoveコマンドでエンジンが予想した手を相手が指した時に送る。
+    # 思考エンジンの予想手が当たった場合にGUIから送られるコマンド。
     elif cmd[0] == "ponderhit":
         pass
 

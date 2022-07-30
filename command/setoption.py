@@ -5,7 +5,7 @@ with open("./config.json") as f:
 
 
 def setoption(name, value):
-    if name in settings["option"]:
+    if name in settings["option"]:    
         settings["option"][name]["value"] = " ".join(value)
     else:
         print(f'Not Found :  "{name}"')
