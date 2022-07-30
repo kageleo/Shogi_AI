@@ -4,8 +4,13 @@
         "ENGINE_AUTHOR" : "kageleo"
     },
     "option" : {
-        "optionKey1" : "optionVal1",
-        "optionKey2" : "optionVal2",
-        "optionKey3" : "optionVal3"
+        "USI_Ponder" : {
+            "type" : "check",
+            "value" : "false"
+        },
+        "USI_Hash" : {
+            "type" : "spin",
+            "value" : "1024 min 1 max 33554432"
+        }
     }
 }

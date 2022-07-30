@@ -9,7 +9,7 @@ def usi():
         print(f'id author {jsn["id"]["ENGINE_AUTHOR"]}')
 
         for key in jsn["option"]:
-            print(f'option {jsn["option"][key]}')
+            print(f'option name {key} type {jsn["option"][key]["type"]} default {jsn["option"][key]["value"]}')
 
         print("usiok")
 
