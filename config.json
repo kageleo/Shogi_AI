@@ -1,0 +1,16 @@
+{
+    "id" : {
+        "ENGINE_NAME" : "Shogi_AI",
+        "ENGINE_AUTHOR" : "kageleo"
+    },
+    "option" : {
+        "USI_Ponder" : {
+            "type" : "check",
+            "value" : "false"
+        },
+        "USI_Hash" : {
+            "type" : "spin",
+            "value" : "1024 min 1 max 33554432"
+        }
+    }
+}
